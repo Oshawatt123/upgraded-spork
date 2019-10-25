@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using GoogleARCore;
 using System;
+using UnityEngine.UI;
 
 public class VisualizerController : MonoBehaviour
 {
@@ -42,6 +43,9 @@ public class VisualizerController : MonoBehaviour
         }
     }
 
+
+
+    public Image bing;
     private void AddVisluazier(AugmentedImage image)
     {
         // anchor is world position of our AR image so it can stay put in real world space when moving about
@@ -53,12 +57,18 @@ public class VisualizerController : MonoBehaviour
         visualizer.Image = image;
         // add our visualizer to our list of visualizers
         visualizers.Add(image.DatabaseIndex, visualizer);
+
+
+
+        bing.color = Color.green;
     }
 
     private void RemoveVisualizer(AugmentedImage image, AugmentedImageVisualizer visualizer)
     {
         visualizers.Remove(image.DatabaseIndex);
         Destroy(visualizer.gameObject);
+
+        bing.color = Color.red;
     }
 
     private AugmentedImageVisualizer GetVisualizer(AugmentedImage image)
