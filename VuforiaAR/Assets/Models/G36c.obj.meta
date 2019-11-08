@@ -1,0 +1,208 @@
+fileFormatVersion: 2
+guid: ded944b1485a63a41a68f776d18cb123
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ___________10
+    100002: ___________21
+    100004: ___________22
+    100006: ___________3
+    100008: ___________4
+    100010: ___________6
+    100012: ___________8
+    100014: ___________9
+    100016: ______________
+    100018: _______________1
+    100020: ________________1
+    100022: _________________1
+    100024: _________________11
+    100026: _________________2
+    100028: _________________41
+    100030: _________________5
+    100032: //RootNode
+    100034: kurok
+    100036: magazin
+    100038: zatvor
+    400000: ___________10
+    400002: ___________21
+    400004: ___________22
+    400006: ___________3
+    400008: ___________4
+    400010: ___________6
+    400012: ___________8
+    400014: ___________9
+    400016: ______________
+    400018: _______________1
+    400020: ________________1
+    400022: _________________1
+    400024: _________________11
+    400026: _________________2
+    400028: _________________41
+    400030: _________________5
+    400032: //RootNode
+    400034: kurok
+    400036: magazin
+    400038: zatvor
+    2100000: ___________10Mat
+    2100002: ___________21Mat
+    2100004: ___________22Mat
+    2100006: ___________3Mat
+    2100008: ___________4Mat
+    2100010: ___________6Mat
+    2100012: ___________8Mat
+    2100014: ___________9Mat
+    2100016: ______________Mat
+    2100018: _______________1Mat
+    2100020: ________________1Mat
+    2100022: _________________1Mat
+    2100024: _________________11Mat
+    2100026: _________________2Mat
+    2100028: _________________41Mat
+    2100030: _________________5Mat
+    2100032: kurokMat
+    2100034: magazinMat
+    2100036: zatvorMat
+    2300000: ___________10
+    2300002: ___________21
+    2300004: ___________22
+    2300006: ___________3
+    2300008: ___________4
+    2300010: ___________6
+    2300012: ___________8
+    2300014: ___________9
+    2300016: ______________
+    2300018: _______________1
+    2300020: ________________1
+    2300022: _________________1
+    2300024: _________________11
+    2300026: _________________2
+    2300028: _________________41
+    2300030: _________________5
+    2300032: kurok
+    2300034: magazin
+    2300036: zatvor
+    3300000: ___________10
+    3300002: ___________21
+    3300004: ___________22
+    3300006: ___________3
+    3300008: ___________4
+    3300010: ___________6
+    3300012: ___________8
+    3300014: ___________9
+    3300016: ______________
+    3300018: _______________1
+    3300020: ________________1
+    3300022: _________________1
+    3300024: _________________11
+    3300026: _________________2
+    3300028: _________________41
+    3300030: _________________5
+    3300032: kurok
+    3300034: magazin
+    3300036: zatvor
+    4300000: ___________10
+    4300002: ___________21
+    4300004: ___________22
+    4300006: ___________3
+    4300008: ___________4
+    4300010: ___________6
+    4300012: ___________8
+    4300014: ___________9
+    4300016: ______________
+    4300018: _______________1
+    4300020: ________________1
+    4300022: _________________1
+    4300024: _________________11
+    4300026: _________________2
+    4300028: _________________41
+    4300030: _________________5
+    4300032: kurok
+    4300034: magazin
+    4300036: zatvor
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

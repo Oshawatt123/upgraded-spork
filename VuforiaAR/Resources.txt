@@ -1,0 +1,6 @@
+Outline shader: https://wiki.unity3d.com/index.php/Silhouette-Outlined_Diffuse
+
+Models:
+Table: https://free3d.com/3d-model/wood-stool-303532.html
+Alien: https://free3d.com/3d-model/grayalien-v01--560376.html
+Gun  : https://free3d.com/3d-model/g36c-55455.html
