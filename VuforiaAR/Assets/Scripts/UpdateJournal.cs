@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Vuforia;
 
 public class UpdateJournal : MonoBehaviour, ITrackableEventHandler
@@ -9,6 +10,10 @@ public class UpdateJournal : MonoBehaviour, ITrackableEventHandler
     private TrackableBehaviour m_TrackableBehaviour;
 
     public CanvasGroup journalUpdate;
+
+    public Text debugText;
+
+    public Journal journal;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +30,18 @@ public class UpdateJournal : MonoBehaviour, ITrackableEventHandler
         if(newStatus == TrackableBehaviour.Status.DETECTED || newStatus == TrackableBehaviour.Status.TRACKED)
         {
             journalUpdate.alpha = 1f;
+            switch(m_TrackableBehaviour.name)
+            {
+                case "Gun":
+                    journal.ShowEntry(m_TrackableBehaviour.name);
+                    break;
+                case "Body":
+                    journal.ShowEntry(m_TrackableBehaviour.name);
+                    break;
+                default:
+                    debugText.text = "This object has not been programmed";
+                    break;
+            }
         }
         else
         {
