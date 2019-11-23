@@ -1,27 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Journal : MonoBehaviour
 {
     class JournalEntry
     {
-        string EntryDescription;
+        public string EntryDescription;
         bool discovered;
 
         public JournalEntry(string description)
         {
             EntryDescription = description;
         }
-
-        public void discover()
-        {
-            discovered = true;
-        }
-
     }
 
     List<JournalEntry> entryList = new List<JournalEntry>();
+    public List<TextMeshProUGUI> textList = new List<TextMeshProUGUI>();
 
     private void Start()
     {
@@ -36,10 +33,10 @@ public class Journal : MonoBehaviour
         switch(name)
         {
             case "Body":
-                entryList[0].discover();
+                textList[0].text = entryList[0].EntryDescription;
                 break;
             case "Gun":
-                entryList[1].discover();
+                textList[1].text = entryList[1].EntryDescription;
                 break;
         }
     }

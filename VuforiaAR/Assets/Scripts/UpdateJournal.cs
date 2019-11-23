@@ -11,7 +11,7 @@ public class UpdateJournal : MonoBehaviour, ITrackableEventHandler
 
     public CanvasGroup journalUpdate;
 
-    public Text debugText;
+    //public Text debugText;
 
     public Journal journal;
 
@@ -39,7 +39,7 @@ public class UpdateJournal : MonoBehaviour, ITrackableEventHandler
                     journal.ShowEntry(m_TrackableBehaviour.name);
                     break;
                 default:
-                    debugText.text = "This object has not been programmed";
+                    //debugText.text = "This object has not been programmed";
                     break;
             }
         }
