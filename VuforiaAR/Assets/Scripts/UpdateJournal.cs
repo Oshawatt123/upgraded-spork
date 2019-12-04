@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using Vuforia;
 
 public class UpdateJournal : MonoBehaviour, ITrackableEventHandler
@@ -19,7 +16,7 @@ public class UpdateJournal : MonoBehaviour, ITrackableEventHandler
     void Start()
     {
         m_TrackableBehaviour = GetComponent<TrackableBehaviour>();
-        if(m_TrackableBehaviour)
+        if (m_TrackableBehaviour)
         {
             m_TrackableBehaviour.RegisterTrackableEventHandler(this);
         }
@@ -27,25 +24,30 @@ public class UpdateJournal : MonoBehaviour, ITrackableEventHandler
 
     public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
     {
-        if(newStatus == TrackableBehaviour.Status.DETECTED || newStatus == TrackableBehaviour.Status.TRACKED)
+        // this is due to the canvasGroup being destroyed before this does, and on destroy the state changes
+        // so we are checking this to ensure no errors in the final product
+        if (journalUpdate)
         {
-            journalUpdate.alpha = 1f;
-            switch(m_TrackableBehaviour.name)
+            if (newStatus == TrackableBehaviour.Status.DETECTED || newStatus == TrackableBehaviour.Status.TRACKED)
             {
-                case "Gun":
-                    journal.ShowEntry(m_TrackableBehaviour.name);
-                    break;
-                case "Body":
-                    journal.ShowEntry(m_TrackableBehaviour.name);
-                    break;
-                default:
-                    //debugText.text = "This object has not been programmed";
-                    break;
+                journalUpdate.alpha = 1f;
+                switch (m_TrackableBehaviour.name)
+                {
+                    case "Gun":
+                        journal.ShowEntry(m_TrackableBehaviour.name);
+                        break;
+                    case "Body":
+                        journal.ShowEntry(m_TrackableBehaviour.name);
+                        break;
+                    default:
+                        //debugText.text = "This object has not been programmed";
+                        break;
+                }
             }
-        }
-        else
-        {
-            journalUpdate.alpha = 0f;
+            else
+            {
+                journalUpdate.alpha = 0f;
+            }
         }
     }
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="ComputerBook" size="0.200000 0.277551" />
-    <ImageTarget name="mario" size="0.150000 0.092757" />
-    <ImageTarget name="zelda" size="0.150000 0.094162" />
-    <ImageTarget name="gun" size="0.300000 0.232326" />
-    <ImageTarget name="bodychalk" size="0.300000 0.199846" />
+    <ImageTarget name="QRGameLitter" size="0.200000 0.200000" />
+    <ImageTarget name="QRGameGun" size="0.200000 0.200000" />
+    <ImageTarget name="QRGameDoor" size="0.200000 0.200000" />
+    <ImageTarget name="QRGameBookshelf" size="0.200000 0.200000" />
+    <ImageTarget name="QRGameAlien" size="0.200000 0.200000" />
   </Tracking>
 </QCARConfig>
