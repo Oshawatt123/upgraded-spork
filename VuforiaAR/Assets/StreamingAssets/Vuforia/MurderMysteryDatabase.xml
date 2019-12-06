@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="QRGameScientist2" size="0.200000 0.200000" />
+    <ImageTarget name="QRGameScientist" size="0.200000 0.200000" />
     <ImageTarget name="QRGameLitter" size="0.200000 0.200000" />
     <ImageTarget name="QRGameGun" size="0.200000 0.200000" />
     <ImageTarget name="QRGameDoor" size="0.200000 0.200000" />
