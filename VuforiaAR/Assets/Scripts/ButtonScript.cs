@@ -23,4 +23,14 @@ public class ButtonScript : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void LoadLevelName(string name)
+    {
+        SceneManager.LoadScene(name);
+    }
+
+    public void LoadLevelIndex(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
 }
