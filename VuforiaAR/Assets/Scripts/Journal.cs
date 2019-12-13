@@ -23,7 +23,7 @@ public class Journal : MonoBehaviour
     private void Start()
     {
         JournalEntry JournalEntryGun = new JournalEntry("This gun looks like it has been fired recently. You can smell the faint aura of Mountain Dew around the weapon.");
-        JournalEntry JournalEntryBody = new JournalEntry("Wow, a body! Looks like it has been well preserved.");
+        JournalEntry JournalEntryBody = new JournalEntry("Wow, a body! Looks like it has been well preserved.... and shot in the head, but that's less important");
         JournalEntry JournalEntryLitter = new JournalEntry("Some garbage.... looks like this is quite recent.");
         JournalEntry JournalEntryDoor = new JournalEntry("The door seems to be uncontrollably opening. Seems like someone with dexerity will be able to easily slip past.");
         JournalEntry JournalEntryBookshelf = new JournalEntry("The bookshelf is dirty and houses many magazines, books, and... other items.");

@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class UserTimer : MonoBehaviour
 {
     private float startTime;
-    private float duration = 300f;
+    private float duration = 180f;
+
+    public TextMeshProUGUI timeText;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +23,6 @@ public class UserTimer : MonoBehaviour
         {
             SceneManager.LoadScene(2);
         }
+        timeText.SetText((duration - (Time.time - startTime)).ToString());
     }
 }
